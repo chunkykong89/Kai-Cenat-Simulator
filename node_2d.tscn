@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl5wmb4p2trks"]
+
+[ext_resource type="Texture2D" uid="uid://p6y551q3rgng" path="res://assets/backgrounds/titlebg.png" id="1_rwcrr"]
+[ext_resource type="Texture2D" uid="uid://crotjcuiskciy" path="res://assets/characters/KCENAT!!!!.png" id="2_xta2g"]
+[ext_resource type="Script" path="res://scripts/PrintScore.cs" id="3_csjs7"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1, 0)
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(575, 324)
+scale = Vector2(0.950495, 0.950147)
+texture = ExtResource("1_rwcrr")
+
+[node name="kaicenat" type="Sprite2D" parent="."]
+position = Vector2(574, 181)
+texture = ExtResource("2_xta2g")
+
+[node name="points" type="RichTextLabel" parent="."]
+offset_left = 4.0
+offset_top = 625.0
+offset_right = 107.0
+offset_bottom = 648.0
+text = "Fanum Tax: 0"
+fit_content = true
+autowrap_mode = 0
+script = ExtResource("3_csjs7")
